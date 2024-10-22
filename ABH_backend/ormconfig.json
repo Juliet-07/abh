@@ -1,0 +1,14 @@
+{
+    "type": "postgres",
+    "host": "gbubemi.postgres.database.azure.com",
+    "port": 5432,
+    "username": "zoomtime",
+    "password": "webnet123@",
+    "database": "aid_Dev",
+    "entities": ["dist/**/*.entity{.ts,.js}"],
+    "migrations": ["dist/migrations/*{.ts,.js}"],
+    "cli": {
+      "migrationsDir": "src/migrations"
+    },
+    "synchronize": false
+  }
