@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+      {
+        "source": "/:path*",
+        "destination": "/"
+      },
+      {
+        "source": "/order/:id",
+        "destination": "/order/[id]"
+      }
+    ]
+  }

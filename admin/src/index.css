@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css";
+
+@layer base {
+  body {
+    @apply font-[Montserrat];
+  }
+}
+
+
+#container {
+  margin: 1rem;
+}
+
+.items {
+  margin-bottom: 1rem;
+}
+@font-face {
+  font-family: "Thin";
+  src: local("Montserrat-Thin"),
+    url("./fonts/Montserrat-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Regular";
+  src: local("Montserrat-Regular"),
+    url("./fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Medium";
+  src: local("Montserrat-Medium"),
+    url("./fonts/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: local("Montserrat-Bold"),
+    url("./fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SemiBold";
+  src: local("Montserrat-SemiBold"),
+    url("./fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+.remove-scrollbar::-webkit-scrollbar{
+  display: none !important;
+}
+
+body{
+  overflow: hidden;
+}
+
+.pagination{
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+
+.active{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid gainsboro;
+  background: teal;
+  color: white;
+  font-weight: bold;
+}
+th{
+  color: teal;
+}
+.nextBtn{
+  /* background-color: yellow; */
+  border: 1px solid gainsboro;
+  width: 80px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: teal;
+  border-radius: 10px;
+}
+
+.slick-dots  button:before{
+  background-color: teal;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  z-index: 1000;
+}
+
+.slick-dots li{
+  list-style: none;
+  /* z-index: -1; */
+}
+
+.slick-scrollbar{
+  padding-right: 5px;
+}
+
+.slick-scrollbar::-webkit-scrollbar{
+  width: 5px;
+  border-radius: 50px;
+  background: gainsboro;
+  /* padding-right: 5px; */
+}
+
+.prevBtn{
+  /* background-color: yellow; */
+  border: 1px solid gainsboro;
+  width: 90px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: teal;
+  border-radius: 10px;
+}
